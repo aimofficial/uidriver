@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "492143790168",
+    "firebase_url": "https://newtaxi-prime-default-rtdb.firebaseio.com",
+    "project_id": "newtaxi-prime",
+    "storage_bucket": "newtaxi-prime.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492143790168:android:c8ea1c1ec4e2f0cbf6622d",
+        "android_client_info": {
+          "package_name": "com.newtaxiprime.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492143790168-0rcg8msu2c9qs7v81f1of68if555lgnb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.newtaxiprime.driver",
+            "certificate_hash": "7823cab294b4a446b81e95e35ee016cc09cde30f"
+          }
+        },
+        {
+          "client_id": "492143790168-7c5u203chu0hvh03ehtshqskl791mmql.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.newtaxiprime.driver",
+            "certificate_hash": "98f30c1ec60eeed41b841e84d94ff6398c0e7ae8"
+          }
+        },
+        {
+          "client_id": "492143790168-g464vvrmt977616dm80tl75ol8l49vhk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANhkFz_fEW2Bz7mnKmunCVCX9J8jPiPfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492143790168-g464vvrmt977616dm80tl75ol8l49vhk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492143790168:android:42d37af9b726a4f6f6622d",
+        "android_client_info": {
+          "package_name": "com.newtaxiprime.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492143790168-actn8n59j8k6dd7d4hjj3vcj7ip8tj07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.newtaxiprime.user",
+            "certificate_hash": "997a3793143687f76856d28de9d5e42b05931d3b"
+          }
+        },
+        {
+          "client_id": "492143790168-ioc93opt5ie99cjk4guua6fjusf87oau.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.newtaxiprime.user",
+            "certificate_hash": "a5e7bf5417b48d723f8b7faeee41c751f1285d45"
+          }
+        },
+        {
+          "client_id": "492143790168-g464vvrmt977616dm80tl75ol8l49vhk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANhkFz_fEW2Bz7mnKmunCVCX9J8jPiPfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492143790168-g464vvrmt977616dm80tl75ol8l49vhk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

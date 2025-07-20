@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_top_curve_white"
+    >
+
+    <com.newtaxiprime.driver.common.custompalette.FontTextView
+        android:id="@+id/enter_amount_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40adp"
+        android:layout_marginBottom="@dimen/_10adp"
+        android:duplicateParentState="true"
+        android:gravity="center_horizontal"
+        android:text="@string/enter_amount"
+        android:textColor="@color/newtaxi_app_black_dark"
+        android:textSize="@dimen/_14asp"
+        app:fontname="@string/font_Medium"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rlt_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_amount_msg"
+        android:layout_marginStart="@dimen/_50adp"
+        android:layout_marginTop="@dimen/_10adp"
+        android:layout_marginEnd="@dimen/_50adp"
+        android:layout_marginBottom="@dimen/_20adp"
+        android:paddingStart="@dimen/_10adp"
+        android:paddingTop="@dimen/_13adp"
+        android:paddingBottom="@dimen/_13adp"
+        android:paddingEnd="@dimen/_10adp"
+        android:background="@drawable/app_curve_button_white_with_outline"
+        >
+
+        <com.newtaxiprime.driver.common.custompalette.FontEditText
+            android:id="@+id/walletamt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/ub__transparent"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textSize="@dimen/_23asp"
+            app:fontname="@string/font_Medium"
+            android:textCursorDrawable="@drawable/app_cursor_color"
+            />
+
+        <!--<com.newtaxiprime.user.appcommon.custompalette.FontTextView
+                android:id="@+id/currency_symbol_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="$"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_25asp"
+                app:fontName="@string/font_Medium"
+                />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/paymentmethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlt_amount"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_50adp"
+        android:layout_marginTop="@dimen/_10adp"
+        android:layout_marginEnd="@dimen/_52adp"
+        android:layout_marginBottom="@dimen/_20adp"
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:id="@+id/paymentmethod_img"
+            android:layout_width="@dimen/_40adp"
+            android:layout_height="@dimen/_32adp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10adp"
+            android:visibility="visible"
+            />
+
+        <com.newtaxiprime.driver.common.custompalette.FontTextView
+            android:id="@+id/paymentmethod_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/paymentmethod_img"
+            android:text="@string/paypal"
+            android:textAllCaps="true"
+            android:textColor="@color/newtaxi_app_black_dark"
+            android:textSize="@dimen/_14asp"
+            app:fontname="@string/font_Medium"
+            />
+
+        <com.newtaxiprime.driver.common.custompalette.FontTextView
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10adp"
+            android:text="@string/change"
+            android:textAllCaps="true"
+            android:textColor="@color/newtaxi_app_black_dark"
+            android:textSize="@dimen/_12asp"
+            app:fontname="@string/font_Medium"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymentmethod"
+        android:layout_marginStart="@dimen/_50adp"
+        android:layout_marginTop="@dimen/_10adp"
+        android:layout_marginEnd="@dimen/_50adp"
+        android:layout_marginBottom="@dimen/_20adp"
+        >
+
+        <com.newtaxiprime.driver.common.custompalette.FontButton
+            android:id="@+id/add_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10adp"
+            android:background="@drawable/app_curve_button_yellow"
+            android:text="@string/add_money"
+            android:textColor="@color/newtaxi_app_black"
+            android:textSize="@dimen/_15asp"
+            android:gravity="center"
+            app:fontname="@string/font_Medium"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:background="@color/newtaxi_app_white">
+
+    <include
+        android:id="@+id/common_header"
+        layout="@layout/app_common_header"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_header"
+        android:layout_marginTop="@dimen/default_header_to"
+        android:background="@drawable/app_top_curve_white">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_40adp"
+            android:id="@+id/walletbalance"
+            android:layout_height="@dimen/_250adp"
+            app:cardCornerRadius="@dimen/_10adp"
+            app:cardElevation="@dimen/_20adp"
+            android:layout_marginStart="@dimen/_30adp"
+            android:layout_marginEnd="@dimen/_30adp">
+
+
+            <RelativeLayout
+                android:id="@+id/wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20adp">
+
+                <ImageView
+                    android:id="@+id/wallet_img"
+                    android:layout_width="@dimen/_80adp"
+                    android:layout_height="@dimen/_80adp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_40adp"
+                    android:src="@drawable/app_ic_wallet" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/_1adp"
+                    android:layout_marginTop="@dimen/_40adp"
+                    android:layout_below="@+id/wallet_img"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- First Card -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_alignParentStart="true"
+                        android:orientation="vertical"
+                        android:layout_gravity="start">
+
+                        <com.newtaxiprime.driver.common.custompalette.FontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentStart="true"
+                            android:textColor="@color/newtaxi_app_black"
+                            android:textSize="@dimen/_14asp"
+                            app:fontname="@string/font_UBERNews"
+                            android:text="Current Balance" />
+
+                        <com.newtaxiprime.driver.common.custompalette.FontTextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/tv_caller_name"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/newtaxi_app_yellow"
+                            android:textSize="@dimen/_24asp"
+                            app:fontname="@string/font_Medium"
+                            android:text="$150" />
+
+                    </LinearLayout>
+
+                    <!-- Second Card -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textEnd"
+                        app:elevation="10dp"
+                        android:layout_marginLeft="@dimen/_30adp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_alignParentEnd="true">
+
+                        <com.newtaxiprime.driver.common.custompalette.FontTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/newtaxi_app_black"
+                            android:textSize="@dimen/_14asp"
+                            android:layout_alignParentEnd="true"
+                            app:fontname="@string/font_UBERNews"
+                            android:text="Account Number" />
+
+                        <com.newtaxiprime.driver.common.custompalette.FontTextView
+                            android:id="@+id/tv_wallet_account"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/newtaxi_app_yellow"
+                            android:textSize="@dimen/_24asp"
+                            app:fontname="@string/font_Medium"
+                            android:text="10001111" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/transfermoney"
+            android:layout_height="@dimen/_58adp"
+            android:layout_marginEnd="@dimen/_30asp"
+            android:layout_marginStart="@dimen/_30adp"
+            android:layout_marginTop="@dimen/_50adp"
+            app:cardElevation="@dimen/_2adp"
+            app:cardCornerRadius="@dimen/_20adp"
+            android:layout_below="@+id/walletbalance">
+
+            <RelativeLayout
+                android:id="@+id/rlt_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2adp"
+                android:layout_marginStart="@dimen/_10adp"
+                android:background="@color/newtaxi_app_white"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_paymentimage"
+                    android:layout_width="@dimen/_25adp"
+                    android:layout_height="@dimen/_25adp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/hand"
+                    app:tint="@color/newtaxi_app_yellow" />
+
+
+                <com.newtaxiprime.driver.common.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20adp"
+                    android:layout_marginTop="@dimen/_20adp"
+                    android:layout_marginEnd="@dimen/_20adp"
+                    android:layout_marginBottom="@dimen/_20adp"
+                    android:layout_toEndOf="@+id/iv_paymentimage"
+                    android:gravity="center_vertical"
+                    android:text="@string/transfermoney"
+                    android:textColor="@color/newtaxi_app_black"
+                    android:textSize="@dimen/_16asp"
+                    app:fontname="@string/font_Medium" />
+
+
+                <ImageView
+                    android:id="@+id/iv_paymentarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_20adp"
+                    android:layout_marginTop="@dimen/_20adp"
+                    android:layout_marginEnd="@dimen/_10adp"
+                    android:layout_marginBottom="@dimen/_20adp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_right_arrow"
+                    app:tint="@color/newtaxi_app_yellow" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:paddingTop="@dimen/_10adp"
+            android:paddingBottom="@dimen/_10adp">
+
+            <com.newtaxiprime.driver.common.custompalette.FontButton
+                android:id="@+id/add_amount"
+                style="@style/CommonBottomSheetButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10adp"
+                android:text="@string/add_amount"
+                android:textColor="@color/newtaxi_app_black"
+                android:textSize="@dimen/_14asp"
+                app:fontname="@string/font_Medium" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
