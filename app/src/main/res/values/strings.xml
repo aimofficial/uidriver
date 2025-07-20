@@ -5,8 +5,7 @@
         <!ENTITY riderbundle "com.uidriver.rider">
         <!ENTITY driverbundle "com.newtaxiprime.driver">
         <!ENTITY siteurl "http://192.168.1.171:8888/">
-        <!ENTITY googleMapKey "AIzaSyDjSp0IaiU85V3IQ65Rfotraioidx2A4-s">
-        <!ENTITY googleAutoCompleteKey "AIzaSyDjSp0IaiU85V3IQ65Rfotraioidx2A4-s">
+
         <!ENTITY firebaseDbMode "live">
         <!ENTITY otpEnable "false">
         ]>
